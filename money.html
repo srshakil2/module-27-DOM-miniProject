@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tealwind sajetion setup -->
+    <script src="./tailwind.config.js"></script>
+  </head>
+  <body>
+    <main class="flex justify-center ">
+      <!-- daisy Khala -->
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <!--  -->
+            <div class="bg-white p-5 rounded-xl">
+              <p id="balance" class="text-center text-black text-5xl font-bold">9000</p>
+              <p class="text-center">Available Balance</p>
+            </div>
+            <div class="divider"></div>
+            <!-- daisy khala -->
+            <div class="flex w-10/12 flex-row gap-3">
+              <div id="cashIn"
+                class="card bg-white rounded-box grid h-20 flex-grow place-items-center"
+              >
+                Cash In
+              </div>
+
+              <div id="cashOut"
+                class="card bg-white rounded-box grid h-20 flex-grow place-items-center"
+              >
+                Cash Out
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl "></div>
+              <form id="form" class=" hidden card-body bg-white rounded-xl">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="Input Amount"
+                    id="input-nums"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Enter PIN</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Input PIN Number"
+                    id="input-pin"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cash-btn" class="btn btn-primary"></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/cash-out.js"></script>
+    <script src="./js/cash-in.js"></script>
+    <script src="./js/cash-add.js"></script>
+    <script src="./js/cash-less.js"></script>
+  </body>
+</html>
